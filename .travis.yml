@@ -6,7 +6,7 @@ env:
     - GIT_EMAIL="marvim@users.noreply.github.com"
     # Encrypted environment variables, see
     # http://docs.travis-ci.com/user/encryption-keys/
-    - secure: G13kwiQU0GY+/H9Zf+shujRr/RP2tVcf9u6cdT6t9GLl8YzNDWz1NDLA0Ykh/kkYht9Bw36diPFcNsHVCs8KwZJcEWS5L2b9g5Cv9VzU7RyQE1uc+oBn2tbDamYUjMkhRGtvrTdVdpjyoQr2mhx5rh7KmOz5VDahLti5cR9yEAU=
+    - secure: "qANpcGF4WXVqB5At6PSl0m0alE69mTsstyQmV7ORmebohYswlkrF+q32Maz6fc7wuZIDs8xEKrqllw526PhN2PirjM8FNnL3nkEQmu6JzFSra1fMGb72ZMnYIaRkIQs15oaqdcrY4Rwk761fYeu4ZQP+LiNwdI6NuNaYFrBhfvQ="
 script:
   - ./scripts/publish-docs.sh
 
