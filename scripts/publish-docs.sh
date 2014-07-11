@@ -13,10 +13,10 @@ else
 fi
 
 NEOVIM_DIR=${BUILD_DIR}/build/neovim
-NEOVIM_REPO=neovim/neovim
-NEOVIM_BRANCH=master
+NEOVIM_REPO=fwalch/neovim
+NEOVIM_BRANCH=clang-analyzer-dead-assignments
 DOC_DIR=${BUILD_DIR}/build/doc
-DOC_REPO=neovim/doc
+DOC_REPO=fwalch/doc
 DOC_BRANCH=gh-pages
 MAKE_CMD="make -j2"
 REPORTS=(doxygen clang-report translation-report)
