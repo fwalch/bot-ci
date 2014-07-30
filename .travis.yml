@@ -1,9 +1,10 @@
 language: c
 env:
   global:
+    - DOC_REPO=fwalch/doc2
     # Encrypted environment variables, see
     # http://docs.travis-ci.com/user/encryption-keys/
-    - secure: "OyoqXO0CqQJpxggE0tNi6LeYXGHslw4SSe4u3UbTOali5AbKdRnSxkMz9YQiuEajJDI2//LZef6RVLULFPZqzIOzsr4yi9S1fbPhXHvqtnZOkpamnkXNNCf7Fd6vGJtT1W140YR9woQoSk0bcLepawSdtkgp+n/ZSqY8rvADgqw="
+    - secure: "aUBdo5ITaEGKTDl8LK3LSMcPZmrDXU6TAwv35hBZykkoUkPLCmsrw+X1ZNjlimhwQesCQhl71Ckj7zx+HvJer3IPqnIzAYv3xRgvwVCZNggrBIqTw1oCz+Fw9ZbHefvNXjw2qzyBedE/ge42vI0TOR0TvICUz9OPkt7r6GVjxMs="
   matrix:
     - CI_TARGET=doxygen
     - CI_TARGET=clang-report
