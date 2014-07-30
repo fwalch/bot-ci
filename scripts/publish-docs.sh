@@ -16,7 +16,7 @@ NEOVIM_DIR=${BUILD_DIR}/build/neovim
 NEOVIM_REPO=neovim/neovim
 NEOVIM_BRANCH=master
 DOC_DIR=${BUILD_DIR}/build/doc
-DOC_REPO=neovim/doc
+DOC_REPO=fwalch/doc2
 DOC_BRANCH=gh-pages
 MAKE_CMD="make -j2"
 

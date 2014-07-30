@@ -6,7 +6,7 @@ env:
     - GIT_EMAIL="marvim@users.noreply.github.com"
     # Encrypted environment variables, see
     # http://docs.travis-ci.com/user/encryption-keys/
-    - secure: G13kwiQU0GY+/H9Zf+shujRr/RP2tVcf9u6cdT6t9GLl8YzNDWz1NDLA0Ykh/kkYht9Bw36diPFcNsHVCs8KwZJcEWS5L2b9g5Cv9VzU7RyQE1uc+oBn2tbDamYUjMkhRGtvrTdVdpjyoQr2mhx5rh7KmOz5VDahLti5cR9yEAU=
+    - secure: Eb722ApA4kG+6ZDy7plQzzjam04UUkVYsOMkZQ4uYSfAme4y95pJYUcYks0Zch9psZoHgvq09+iwXDqh9L+YBEYCHog71vNV/tmKBgkPUNdLq4bGSJPA35JKl8sQjKCKRqwNqjJ415sVmUMi9TAe3Gf+6n6w/rEMbV5Wxavn6I8=
   matrix:
     - REPORT=doxygen
     - REPORT=clang-report
