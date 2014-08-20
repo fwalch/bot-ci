@@ -77,4 +77,5 @@ git config --global user.email ${GIT_EMAIL}
 cd ${DOC_DIR}
 git add --all .
 git commit -m "Documentation: Automatic update."
-git push --force https://${GH_TOKEN}@github.com/${DOC_REPO} ${DOC_BRANCH}
+git push --force -q https://${GH_TOKEN}@github.com/${DOC_REPO} ${DOC_BRANCH} &&
+  echo "Pushed to ${DOC_REPO}:${DOC_BRANCH}."
