@@ -1,24 +1,25 @@
 language: c
 env:
   global:
+    - DOC_REPO=fwalch/neovim-doc
     # Encrypted environment variables, see
     # http://docs.travis-ci.com/user/encryption-keys/
     #
     # GH_TOKEN: Marvim's Github access token
-    - secure: OyoqXO0CqQJpxggE0tNi6LeYXGHslw4SSe4u3UbTOali5AbKdRnSxkMz9YQiuEajJDI2//LZef6RVLULFPZqzIOzsr4yi9S1fbPhXHvqtnZOkpamnkXNNCf7Fd6vGJtT1W140YR9woQoSk0bcLepawSdtkgp+n/ZSqY8rvADgqw=
+    - secure: LHwEucEvWDUJh6xF8txCpjl1DFeHEiMMmaAYkNAqkLfxNqgTxWA9l7m03J8WZeCQBG1u14MKLwZQ5rcUn/nNWJKxm4d7DDvYyBwlqoimPiVlYywXuQOwPON7s3us0S9VyYEMyuBl7zdZoiov7PgKTJNB2qY0LPV23ynUWqxzVjY=
     # COVERITY_SCAN_TOKEN
     - secure: pgI3Qt7bCRDeuKX38hP9xTJ6CdbwoUkcPToHnfDFYeclhUJRgCfZhCKKO+zTwqoa2Jx7wShoFeHaKidOFctg4ls4lrn47b0bPFED3LtU7RDQaeamqFKzgTV1IcEpkUfGl/i8tOmaEd7UvyUHKuKZmjmVr4Ce4ugATShYB186EW0=
   matrix:
-    - CI_TARGET=assign-labels
+    #- CI_TARGET=assign-labels
     - CI_TARGET=clang-report
-    - CI_TARGET=coverity
-    - CI_TARGET=doc-index
-    - CI_TARGET=doxygen
-    - CI_TARGET=nightly
-    - CI_TARGET=rebuild-deps32
-    - CI_TARGET=rebuild-deps64
-    - CI_TARGET=translation-report
-    - CI_TARGET=user-docu
-    - CI_TARGET=vimpatch-report
+    #- CI_TARGET=coverity
+    #- CI_TARGET=doc-index
+    #- CI_TARGET=doxygen
+    #- CI_TARGET=nightly
+    #- CI_TARGET=rebuild-deps32
+    #- CI_TARGET=rebuild-deps64
+    #- CI_TARGET=translation-report
+    #- CI_TARGET=user-docu
+    #- CI_TARGET=vimpatch-report
 script:
   - ./ci/${CI_TARGET}.sh
