@@ -6,8 +6,8 @@ nightly-x64() {
   export PATH="$TRAVIS_BUILD_DIR/_neovim/bin:$PATH"
   echo "\$PATH: \"$PATH\""
 
-  export VIM="$TRAVIS_BUILD_DIR/_neovim/share/nvim/runtime"
-  echo "\$VIM: \"$VIM\""
+  export VIMRUNTIME="$TRAVIS_BUILD_DIR/_neovim/share/nvim/runtime"
+  echo "\$VIMRUNTIME: \"$VIMRUNTIME\""
 
   nvim --version
 }
