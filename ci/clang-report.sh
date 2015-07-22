@@ -106,11 +106,6 @@ get_code_quality_color() {
   printf "%.2x%.2x%.2x" $red $green $blue
 }
 
-is_ci_build && {
-  install_clang
-  setup_deps64
-}
-
 DOC_SUBTREE="/reports/clang/"
 clone_doc
 clone_neovim
