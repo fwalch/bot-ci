@@ -19,6 +19,8 @@ generate_clang_report() {
   ${MAKE_CMD} deps
 
   # Generate report
+  ls -l /home/travis/build/fwalch/bot-ci/build/neovim/.deps/usr/include
+  export VERBOSE=1
   if "${SCAN_BUILD:-scan-build}" \
       --status-bugs \
       --html-title="Neovim Static Analysis" \
