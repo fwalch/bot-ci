@@ -22,6 +22,7 @@ generate_clang_report() {
   ls -l /home/travis/build/fwalch/bot-ci/build/neovim/.deps/usr/include
   export VERBOSE=1
   if "${SCAN_BUILD:-scan-build}" \
+      --use-cc="$(which ${CC:-clang})" \
       --status-bugs \
       --html-title="Neovim Static Analysis" \
       -o build/clang-report \
